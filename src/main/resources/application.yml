@@ -13,13 +13,23 @@ spring:
     template:
       default-topic: bookstore-events
     producer:
-      bootstrap-servers: localhost:9092
+      bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
       key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
     admin:
       properties:
-        bootstrap.servers: localhost:9092
+        bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
 
+  kafka_compose:
+    template:
+      default-topic: bookstore-events
+    producer:
+      bootstrap.servers: kafka_compose:9092
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    admin:
+      properties:
+        bootstrap.servers: kafka_compose:9092
 ---
 
 spring:
