@@ -1,12 +1,20 @@
-# 📚 Kafka Book Producer
+# 📚 Kafka BookStore Producer
 
-![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?logo=springboot)
-![Kafka](https://img.shields.io/badge/Apache%20Kafka-Producer%2FConsumer-black?logo=apachekafka)
+![Java](https://img.shields.io/badge/Java-17-007396?style=flat-square&logo=java)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.7-6DB33F?style=flat-square&logo=spring)
+![Spring Kafka](https://img.shields.io/badge/Spring%20Kafka-3.6+-6DB33F?style=flat-square&logo=apachekafka)
+![Lombok](https://img.shields.io/badge/Lombok-1.18.26-FC2F2F?style=flat-square&logo=lombok)
+![Spring Web](https://img.shields.io/badge/Spring%20Web-3.5.7-6DB33F?style=flat-square&logo=spring)
+![Spring Validation](https://img.shields.io/badge/Spring%20Validation-3.5.7-6DB33F?style=flat-square&logo=spring)
+![JUnit 5](https://img.shields.io/badge/JUnit_5-5.10.0-25A162?style=flat-square&logo=junit5)
+![Kafka Test](https://img.shields.io/badge/Kafka_Test-3.6+-231F20?style=flat-square&logo=apachekafka)
 ![License](https://img.shields.io/badge/license-MIT-blue)
+## 🚀 Tecnologias e Dependências
+
+
 
 Projeto em **Java Spring Boot** com foco em **Kafka Producer**, testes integrados e unitários. Este projeto demonstra o envio de eventos de livros para um broker Kafka local.
-Este serviço complementa o [Kafka Book Consumer](https://github.com/raimundofullstack/bookstore-events-consumer)
+Este serviço complementa o [Kafka BookStore Consumer](https://github.com/raimundofullstack/bookstore-events-consumer)
 
 ---
 
