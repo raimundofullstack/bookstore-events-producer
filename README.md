@@ -1,8 +1,16 @@
-# Kafka Book Producer
+# 📚 Kafka Book Producer
+
+![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?logo=springboot)
+![Kafka](https://img.shields.io/badge/Apache%20Kafka-Producer%2FConsumer-black?logo=apachekafka)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 Projeto em **Java Spring Boot** com foco em **Kafka Producer**, testes integrados e unitários. Este projeto demonstra o envio de eventos de livros para um broker Kafka local.
+Este serviço complementa o [Kafka Book Consumer](https://github.com/raimundofullstack/bookstore-events-consumer)
 
-## Descrição
+---
+
+## 🧩Descrição
 
 O projeto contém endpoints REST para criar e atualizar livros, enviando eventos correspondentes para o Kafka. Ideal para estudos de microservices, mensageria e integração com Kafka.
 
@@ -12,25 +20,23 @@ O projeto contém endpoints REST para criar e atualizar livros, enviando eventos
 
 ## 🚀 Tecnologias e Dependências
 
-- Java 17
-- Spring Boot
-- Spring Kafka
-- Lombok
-- Spring Web
-- Spring Validation
-- JUnit 5 (testes unitários e integrados)
-- Kafka Test (testes específicos para Kafka)
+- ☕ Java 17
+- 🌱 Spring Boot 3.5.7
+- 🔄 Spring Kafka 3.6+
+- 🧩 Lombok
+- 🌐 Spring Web
+- ✅ Spring Validation
+- 🧪 JUnit 5 (testes unitários e integrados)
+- 🛠️ Kafka Test (testes específicos para Kafka)
 
 ## 🧱 Estrutura do Projeto
+```text
 src/main/java/com/martins
-
 ├── config/ # Configuração de topicos
-
 ├── controller/ # Endpoints REST(por não ser o foco, não criei o service)
-
 ├── domain/ # Data Transfer Objects
-
 └── producer/ # Realiza o envio dos eventos streams a um tópico no kafka
+```
 
 Exemplo do `build.gradle`:
 
